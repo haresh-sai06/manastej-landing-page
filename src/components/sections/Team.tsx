@@ -24,7 +24,7 @@ export default function Team() {
                 className={`grid items-center gap-8 md:grid-cols-2 md:gap-14 ${flip ? "md:[&>*:first-child]:order-2" : ""}`}
               >
                 {/* Cutout portraits — transparent bg sits directly on deep green */}
-                <div className="relative aspect-[4/5] w-full max-w-md justify-self-center md:max-w-none md:justify-self-stretch">
+                <div className="relative aspect-[4/5] w-[91%] max-w-md justify-self-center md:max-w-none">
                   <Image
                     src={m.photo}
                     alt={`Portrait of ${m.name}`}
@@ -37,7 +37,7 @@ export default function Team() {
                   <h3 className="font-serif text-4xl leading-tight text-foam md:text-5xl">{m.name}</h3>
                   {m.role && <p className="eyebrow mt-4 text-mint">{m.role}</p>}
                   {m.bio && (
-                    <p className={`mt-5 max-w-xl whitespace-pre-line text-base leading-relaxed text-mist md:text-lg ${flip ? "md:ml-auto" : ""}`}>
+                    <p className={`mt-5 max-w-xl whitespace-pre-line text-[15px] leading-relaxed text-mist md:text-[17px] ${flip ? "md:ml-auto" : ""}`}>
                       {m.bio}
                     </p>
                   )}
