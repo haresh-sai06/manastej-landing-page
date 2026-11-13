@@ -144,5 +144,11 @@ export const team = {
       photo: "/team/haresh.webp",
       bio: "In an industry obsessed with quick patches, Haresh Sainaath operates on a foundational truth: hacks don’t scale; systems do. Bridging AI & ML studies at Sri Krishna College of Technology with relentless production execution, he engineers infrastructure where performance is the ultimate user experience. Moving effortlessly across Rust, Tauri, Next.js, Python, and LangGraph, he pairs telemetry-first backends with 60fps motion-led interfaces. From shipping Nexa Ride to the Apple App Store at Dendo to building voice-driven industrial automation at Tenneco, his bias for action is unmistakable. With 27 architected builds - including real-time AI flood rescue engines (ReliefStream) and hybrid RAG pipelines - Haresh doesn’t just write code. Blending systems-level precision with AI innovation, he builds resilient digital infrastructure designed to perform when it matters most.",
     },
+    {
+      name: "Yash Bannur",
+      role: "Backend & Full Stack Engineer",
+      photo: "/team/yash.webp",
+      bio: "Yashavant N B believes great software is built through continuous learning, thoughtful engineering, and solving real-world problems. With a strong foundation in Computer Science Engineering and a passion for full-stack development, he works across Java, Spring Boot, React.js, JavaScript, MySQL, and MongoDB to build applications that pair robust backend architecture with intuitive frontend experiences. His projects include YForge, a LeetCode-inspired coding platform with a Java execution engine, JWT authentication, and performance analytics, and TeamCanvas, a collaborative task management SaaS platform.\n\nWith hands-on experience in REST API development, database management, authentication, deployment, and debugging production-level issues, Yashavant treats every project as a chance to learn, experiment, and engineer better solutions. He doesn’t just write code - he focuses on understanding problems, designing solutions, and bringing ideas to life. Driven by curiosity and a builder’s mindset, he keeps exploring new technologies and pushing himself to grow as a software engineer.",
+    },
   ],
 };
