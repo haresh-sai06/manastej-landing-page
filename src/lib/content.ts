@@ -152,9 +152,9 @@ export const team = {
     },
     {
       name: "Yash Bannur",
-      role: "Backend & Full Stack Engineer",
+      role: "Full-Stack Development Lead",
       photo: "/team/yash.webp",
-      bio: "Yashavant N B believes great software is built through continuous learning, thoughtful engineering, and solving real-world problems. With a strong foundation in Computer Science Engineering and a passion for full-stack development, he works across Java, Spring Boot, React.js, JavaScript, MySQL, and MongoDB to build applications that pair robust backend architecture with intuitive frontend experiences. His projects include YForge, a LeetCode-inspired coding platform with a Java execution engine, JWT authentication, and performance analytics, and TeamCanvas, a collaborative task management SaaS platform.\n\nWith hands-on experience in REST API development, database management, authentication, deployment, and debugging production-level issues, Yashavant treats every project as a chance to learn, experiment, and engineer better solutions. He doesn’t just write code - he focuses on understanding problems, designing solutions, and bringing ideas to life. Driven by curiosity and a builder’s mindset, he keeps exploring new technologies and pushing himself to grow as a software engineer.",
+      bio: "Yash Bannur transforms ideas into functional digital experiences through modern full-stack engineering. With expertise in Java, Spring Boot, React, JavaScript, and SQL, he builds responsive applications, robust APIs, and seamless backend systems. Driven by problem-solving and product innovation, he bridges technology and usability to create solutions that make a difference.\n\nAt Manastej, he strengthens the digital foundation, turning complex ideas into seamless user experiences.",
     },
   ],
 };
