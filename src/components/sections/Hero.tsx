@@ -104,7 +104,14 @@ export default function Hero() {
             </h1>
             <p data-intro className="mt-5 max-w-2xl text-balance text-lg text-foam/90 md:text-2xl">{hero.title}</p>
             <p data-intro className="mt-3 max-w-xl text-pretty text-sm text-mist md:text-base">
-              <strong className="font-semibold text-foam">{hero.sub}.</strong> {hero.body}
+              <strong className="block font-semibold text-foam">{hero.sub}.</strong>
+              {/* Keep hyphenated words (2-minute, team-level) from splitting across lines */}
+              {hero.body.split(" ").map((w, i) => (
+                <span key={i}>
+                  {i > 0 && " "}
+                  {w.includes("-") ? <span className="whitespace-nowrap">{w}</span> : w}
+                </span>
+              ))}
             </p>
           </div>
           <div data-intro className="mt-8 flex flex-wrap items-center justify-center gap-3">

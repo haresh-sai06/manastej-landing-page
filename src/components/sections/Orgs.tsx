@@ -27,7 +27,7 @@ export default function Orgs() {
         <div className="md:sticky md:top-24 md:self-start">
           <p className="eyebrow mb-5 text-mint">{orgs.label}</p>
           <h2 id="orgs-title" className="font-serif text-5xl leading-[0.95] md:text-7xl">
-            {orgs.title} <em className="block text-mint">— {orgs.subtitle}</em>
+            {orgs.title} <em className="block text-mint">{orgs.subtitle}</em>
           </h2>
           <p className="mt-6 max-w-md text-lg text-mist">{orgs.body}</p>
 
@@ -43,7 +43,7 @@ export default function Orgs() {
                 </div>
               ))}
             </div>
-            <figcaption className="og-caption mt-4 text-xs text-mist/80">Illustrative only — {orgs.items[2].body}</figcaption>
+            <figcaption className="og-caption mt-4 text-xs text-mist/80">Illustrative only. {orgs.items[2].body}</figcaption>
           </figure>
         </div>
 

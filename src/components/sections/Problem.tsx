@@ -45,7 +45,7 @@ export default function Problem() {
           {/* Beat 1: title + stats */}
           <div className="col-start-1 row-start-1 flex flex-col justify-center gap-12">
             <div className="pb-intro">
-              <p className="eyebrow mb-5 text-teal">— {problem.label}</p>
+              <p className="eyebrow mb-5 text-teal">{problem.label}</p>
               <h2 id="problem-title" className="pb-title max-w-4xl font-serif text-5xl leading-[0.95] text-ink md:text-8xl">
                 <Words text={problem.title} />
               </h2>

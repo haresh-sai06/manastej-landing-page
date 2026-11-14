@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Manastej makes everyday mental health support easy to reach: 2-minute check-ins, someone to talk to, real therapists, and private team-level burnout insights for employers.",
   openGraph: {
     title: "Manastej | Where Science Meets the Soul",
-    description: "Mental health support people actually use — for you, your therapist and your team.",
+    description: "Mental health support people actually use, for you, your therapist and your team.",
     type: "website",
     images: ["/manastej-logo.png"],
   },
