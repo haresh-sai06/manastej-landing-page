@@ -48,7 +48,7 @@ export default function Features() {
           <header className="hz-intro flex shrink-0 flex-col justify-center md:pr-16">
             <p className="eyebrow mb-5 text-mint">{features.label}</p>
             <h2 id="features-title" className="font-serif text-5xl leading-[0.95] text-foam md:text-7xl">
-              Core Features of the <em className="text-mint">Manastej</em> Platform
+              What you can do with <em className="text-mint">Manastej</em>
             </h2>
             <p className="mt-6 max-w-md text-lg text-mist">{features.body}</p>
             <p className="eyebrow mt-10 hidden items-center gap-3 text-mist/70 md:flex" aria-hidden="true">Keep scrolling <span className="inline-block h-px w-16 bg-mist/40" /></p>

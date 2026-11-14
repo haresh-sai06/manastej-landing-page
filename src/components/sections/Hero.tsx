@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRef } from "react";
-import { hero } from "@/lib/content";
+import { hero, contactEmail } from "@/lib/content";
 import { useScene, gsap, MQ } from "@/lib/motion";
 import { Leaf } from "@/components/Leaf";
 
@@ -108,8 +108,8 @@ export default function Hero() {
             </p>
           </div>
           <div data-intro className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="#about" className="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition-transform hover:scale-[1.04]">Explore Manastej ↗</a>
-            <a href="#organizations" className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-foam transition-colors hover:bg-white/5">For HR ↗</a>
+            <a href="#about" className="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition-transform hover:scale-[1.04]">{hero.ctaPrimary} ↗</a>
+            <a href={`mailto:${contactEmail}?subject=${encodeURIComponent("Manastej demo request")}`} className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-foam transition-colors hover:bg-white/5">{hero.ctaSecondary} ↗</a>
           </div>
         </div>
 

@@ -54,8 +54,8 @@ export default function Orgs() {
               <h3 className="mt-4 font-serif text-4xl leading-tight">{o.title}</h3>
               <p className="mt-4 text-mist">{o.body}</p>
               {i === 1 && (
-                <ul className="mt-6 flex flex-wrap gap-2" aria-label="VUCA">
-                  {["Volatility", "Uncertainty", "Complexity", "Ambiguity"].map((v) => (
+                <ul className="mt-6 flex flex-wrap gap-2" aria-label="Common causes of workplace stress">
+                  {orgs.causes.map((v) => (
                     <li key={v} className="rounded-full bg-mint/10 px-3 py-1 text-xs font-semibold text-mint">{v}</li>
                   ))}
                 </ul>

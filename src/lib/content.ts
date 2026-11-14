@@ -17,114 +17,118 @@ export const contactPhoneHref = "tel:+919903812807";
 
 export const hero = {
   eyebrow: "Manastej — Where Science Meets the Soul",
-  title: "The Next-Generation Mental Wellness & Therapy Ecosystem",
-  sub: "AI-Powered Mental Health for Everyone",
-  body: "A privacy-first ecosystem connecting individual wellbeing, professional therapy, and organizational insight.",
+  title: "Mental health support people actually use — for you, your therapist and your team.",
+  sub: "Feeling stretched thin? Help shouldn't be hard to find or scary to ask for",
+  body: "Manastej gives you 2-minute daily check-ins, someone to talk to, and a way to reach a real therapist — and gives employers a team-level view of burnout without ever showing anyone's personal data.",
   quote: "Mental health is not a destination, but a process. Manastej gives you the compass.",
   tagline: "When no one else listens, we do.",
-  pillars: ["Personal wellbeing", "Clinical context", "Human connection", "Workplace insight"],
-  steps: ["Understand the person", "Reflect every day", "Connect to care", "Support healthier teams"],
+  pillars: ["Feel better, daily", "Talk to a therapist", "Someone to listen", "Healthier teams"],
+  steps: ["Check in for 2 minutes", "See what drains you", "Get help when you need it", "Fix the cause, not the symptom"],
+  ctaPrimary: "See how it works",
+  ctaSecondary: "Book a demo for your team",
 };
 
 export const problem = {
   label: "The Problem",
-  title: "One crisis, three broken systems",
-  body: "Over 1 billion people live with a mental health condition. The systems meant to help them don't talk to each other.",
+  title: "Your best people are running on empty",
+  body: "Priorities change before your morning coffee. Meetings fill the afternoon. Messages keep coming late at night. Our minds weren't built for this pace — and the help that exists is hard to reach.",
   // Figures as published on manastej.com. TODO(source): add citations (e.g. WHO) before launch.
   stats: [
-    { label: "People affected worldwide", value: "1 in 7", note: "of all people globally" },
+    { label: "People affected worldwide", value: "1 in 7", note: "live with a mental health condition" },
     { label: "Lost to the economy yearly", value: "$1T", note: "in lost productivity" },
     { label: "Treated in low-income countries", value: "<10%", note: "receive any care at all" },
-    { label: "Mental health workers per 100k", value: "13", note: "in high-income countries" },
+    { label: "Mental health workers per 100k", value: "13", note: "even in high-income countries" },
   ],
-  failuresLabel: "Three systemic failures holding the world back",
+  failuresLabel: "Why today's help isn't working",
   failures: [
-    { who: "Individuals", title: "Disconnected tools", body: "Meditation apps and mood trackers that never connect to real clinicians. People fall through the gap between self-help and professional care." },
-    { who: "Therapists", title: "Drowning in admin", body: "Outdated practice software eats hours that should go to patients. Clinicians spend more time on paperwork than on healing." },
-    { who: "Employers", title: "Spending blind", body: "Wellness perks see under 5% usage, while burnout quietly drives costly turnover. Organizations invest without signal of impact." },
+    { who: "For people", title: "The 2 AM gap", body: "Stress doesn't keep office hours. When anxiety hits late at night or before a big day, waiting weeks for an expensive therapy slot isn't an option." },
+    { who: "For therapists", title: "Buried in paperwork", body: "Therapists spend hours on notes and scheduling — and have no idea how a client is doing in the long week between sessions." },
+    { who: "For employers", title: "Wellness nobody uses", body: "Staff skip company wellness apps because they fear HR is watching. Free webinars don't fix overload, and burnout shows up only when people resign." },
   ],
 };
 
 export const about = {
   label: "01 / What is Manastej?",
-  title: "AI-Powered Mental Health for Everyone",
-  body: "Manastej (Sanskrit: Manas \u201cmind\u201d + Tej \u201cradiance\u201d) connects self-care, professional therapy, and workplace wellbeing in one person-centered experience.",
+  title: "One place for everyday mental health — for people, therapists and teams",
+  body: "Manastej (Sanskrit: Manas \u201cmind\u201d + Tej \u201cradiance\u201d) puts everyday self-care, real therapy and a healthier workplace in one simple, private app.",
   audiences: [
-    { k: "For Individuals", title: "Personal Mental Wellness Tracking", body: "Wellness tracking, supportive resources, and reflective growth in a non-judgmental space for everyday reflection." },
-    { k: "For Therapists", title: "Clinical Dashboards & Diagnostic Aids", body: "Longitudinal context and AI-assisted workflows that enhance — not replace — professional expertise." },
-    { k: "For Organizations", title: "Workplace Wellbeing & HR Analytics", body: "Aggregated, privacy-aware workforce insights for startups and enterprises exploring team wellbeing." },
+    { k: "For You", title: "Feel better in 2 minutes a day", body: "Quick daily check-ins show what drains your energy and what restores it — so you can catch stress early, before it becomes burnout." },
+    { k: "For Therapists", title: "Less paperwork, more care", body: "See how your client slept, felt and coped between sessions, and keep notes and follow-ups in one place. AI helps; you make every decision." },
+    { k: "For Employers", title: "Fix workloads, not just symptoms", body: "See team-level stress trends and what's causing them — never any one person's data — so you can act before good people burn out." },
   ],
   disclaimer: "Manastej is in active development. Features described represent the product vision, not a claim that every feature is live or clinically validated.",
 };
 
 export const features = {
-  label: "02 / Core Features",
-  title: "Core Features of the Manastej Platform",
-  body: "Connected experiences for personal reflection, professional care, and organizational wellbeing.",
+  label: "02 / What You Can Do",
+  title: "What you can do with Manastej",
+  body: "Small, simple tools for everyday life — and a clear path to a professional when you need one.",
   items: [
-    { tag: "01 / Track", title: "Daily Cognitive-Flow (MCF) Tracker", body: "Mood, energy, anxiety, sleep, and productivity check-ins that build a personal wellbeing picture over time.", note: "ERS and CSI are proposed indicators. Not a diagnosis." },
-    { tag: "02 / Clinical", title: "Secure Tele-Health Therapy Infrastructure", body: "Encrypted video and voice sessions with session notes and an optional AI-assisted therapist sidebar.", note: "Encryption and AI features require clinical validation before launch." },
-    { tag: "03 / Bio", title: "Contactless Stress Detection & Bio-Nudges", body: "Optional passive sensing on supported devices, paired with gentle breathing and grounding micro-resets.", note: "Stress detection is exploratory. Requires informed consent and validation." },
-    { tag: "04 / Express", title: "Mind Canvas — Digital Projective Psychology", body: "Drawing and symbolic reflection activities including House-Tree-Person-inspired prompts.", note: "AI interpretations are exploratory, not validated assessments." },
-    { tag: "05 / Connect", title: "A Friend When You Need One", body: "Peer-support service connecting people with trained listeners. When no one else listens, we will.", note: "Not an emergency service. Escalation to licensed professionals is planned." },
-    { tag: "06 / Grow", title: "Character Story — Your Mental Journey, Gamified", body: "An opt-in digital persona that grows alongside your reflections and wellbeing journey.", note: "Themes are reflective concepts, not clinical scores." },
+    { tag: "01 / Check in", title: "A 2-minute daily check-in", body: "Rate your mood, energy, sleep, stress and focus. Over time you see patterns — what wears you down and what helps.", note: "A self-reflection tool, not a diagnosis." },
+    { tag: "02 / Therapy", title: "Talk to a real therapist", body: "Find a verified therapist and meet over video or voice inside the app. Your therapist can use an optional AI assistant for notes.", note: "In-app sessions and AI notes are being tested before launch." },
+    { tag: "03 / Reset", title: "Quick resets for a stressed mind", body: "Short breathing and grounding exercises when things feel like too much. We're also testing a stress check that uses only your phone's camera — no wearables.", note: "The camera stress check is experimental, opt-in, and needs validation." },
+    { tag: "04 / Express", title: "Mind Canvas — draw how you feel", body: "Sometimes it's easier to draw than to talk. Simple drawing prompts help you reflect on what's going on inside.", note: "AI reflections are exploratory, not clinical assessments." },
+    { tag: "05 / Connect", title: "Someone to talk to", body: "Feeling alone at midnight? Talk to a trained, caring listener without judgment. When no one else listens, we will.", note: "Not an emergency service. In a crisis, contact local emergency services." },
+    { tag: "06 / Grow", title: "Watch yourself grow", body: "An optional character that grows as you keep showing up for yourself — a gentle way to stay consistent.", note: "A motivation feature, not a clinical score." },
   ],
 };
 
 export const orgs = {
-  label: "03 / Organizations",
-  title: "HR Admin & Organizational Suite",
-  subtitle: "The Wellbeing of Your Workforce",
-  body: "A company is only as strong as the minds within it. Manastej brings mental wellness context to the boardroom — anonymously and responsibly.",
+  label: "03 / For HR & Leaders",
+  title: "Fix workloads, not just symptoms",
+  subtitle: "without watching anyone",
+  body: "Most wellness perks go unused because people fear being tracked. Manastej shows leaders how teams are doing as a group — and why — while keeping every individual private.",
   items: [
-    { tag: "01 / Team Pulse", title: "See the team pulse, not individuals", body: "Real-time aggregated view of team mood, energy, and productivity — without ever seeing individual data." },
-    { tag: "02 / VUCA Dashboard", title: "Understand workplace pressure", body: "AI-powered analysis using the VUCA framework — Volatility, Uncertainty, Complexity, and Ambiguity." },
-    { tag: "03 / Privacy Guardrails", title: "Privacy built into reporting", body: "Data shown only for groups of 5+, reducing the risk of identifying individuals." },
-    { tag: "04 / Pulse Surveys", title: "Check in regularly", body: "Weekly Pulse checks and Quarterly Deep Dives for feedback at different levels of detail." },
+    { tag: "01 / Team Pulse", title: "Spot burnout early", body: "See team-level trends in mood, energy and workload over time, so you can step in before stress turns into resignations." },
+    { tag: "02 / Root Causes", title: "Find out what's causing the stress", body: "Is it shifting priorities, job worries, too many meetings, or unclear roles? Anonymous check-ins point you to the real cause." },
+    { tag: "03 / Privacy Guardrails", title: "No one can be singled out", body: "Results only appear for groups of 5 or more, so no individual can be identified." },
+    { tag: "04 / Pulse Surveys", title: "Short, regular check-ins", body: "A quick weekly pulse plus a deeper check every quarter — enough to see what's changing." },
   ],
+  causes: ["Shifting priorities", "Job uncertainty", "Too much at once", "Unclear roles"],
 };
 
 export const privacy = {
   label: "04 / Privacy & Security",
   title: "Privacy is non-negotiable.",
-  body: "Mental health data is deeply sensitive. Manastej puts privacy, transparency, and human oversight at the center.",
+  body: "What you share about your mind is yours. Your employer never sees your personal check-ins, and people — not AI — make the important calls.",
   items: [
-    { title: "Data isolation", body: "Strict data isolation by role and purpose. Implementation requires security review." },
-    { title: "Organizational anonymity", body: "Aggregated and anonymized before display. Groups smaller than five are suppressed." },
-    { title: "Human-in-the-loop AI", body: "Every consequential AI recommendation requires human review. AI supports, never replaces judgment." },
-    { title: "PII protection", body: "Automated PII checks detect accidental personal-information exposure in communications." },
+    { title: "Your data stays yours", body: "Each role sees only what it needs. Your personal check-ins are never shown to your employer." },
+    { title: "Employers see groups, not people", body: "Team data is combined and anonymised first. Groups smaller than five are hidden." },
+    { title: "Humans stay in charge", body: "AI can suggest, but every important recommendation is reviewed by a person." },
+    { title: "Personal details protected", body: "Automatic checks help catch personal information shared by mistake." },
   ],
 };
 
 export const tech = {
   label: "05 / Technology",
   title: "Science-led. Human-centered.",
-  body: "AI workflows, real-time infrastructure, and privacy-aware data practices. Implementation details are proprietary.",
+  body: "Careful AI, reliable infrastructure and strong privacy practices — built to support people, not replace them.",
   items: [
-    { title: "AI & Intelligence", body: "Agentic AI with multi-model orchestration" },
-    { title: "Biometric Analysis", body: "Proposed contactless sensing; requires validation" },
-    { title: "Real-Time Infrastructure", body: "Cloud-native, globally scalable" },
-    { title: "Data Security", body: "Encryption and role-based access control" },
-    { title: "Clinical Compliance", body: "Architecture aligned with healthcare data standards" },
+    { title: "Helpful AI", body: "AI that supports people, with humans in charge" },
+    { title: "Stress sensing", body: "Experimental camera-based check; needs validation" },
+    { title: "Always available", body: "Cloud infrastructure built to scale" },
+    { title: "Data security", body: "Encryption and role-based access" },
+    { title: "Clinical standards", body: "Designed around healthcare data standards" },
   ],
 };
 
 export const audience = {
   label: "06 / Who It's For",
   title: "Built for people, wherever they are.",
-  body: "Mental wellness has no borders. Manastej is designed for different life stages and care settings.",
+  body: "Whether you're struggling yourself, caring for clients, or leading a team — Manastej meets you where you are.",
   items: [
-    { title: "Individuals", body: "Personal wellbeing tracking, mood insights, and reflective growth tools." },
-    { title: "Therapists", body: "Clinical dashboards, longitudinal context, and AI-assisted workflows." },
-    { title: "Organizations", body: "Aggregated, privacy-aware workforce wellbeing analytics." },
+    { title: "Individuals", body: "Instead of waiting until you hit a wall, check in daily, get support late at night, and reach a therapist when you need one." },
+    { title: "Therapists", body: "Instead of flying blind between visits, see how clients are really doing and spend less time on admin." },
+    { title: "Organizations", body: "Instead of paying for perks nobody uses, see what's really driving burnout and fix it — privately." },
   ],
 };
 
 export const join = {
-  label: "07 / Be Part of the Journey",
-  title: "We're building it for the world.",
-  body: "Manastej is in development. Be among the first to experience it as it moves toward launch.",
-  cta: "Contact the team",
+  label: "07 / Get Started",
+  title: "Let's make support easy to reach.",
+  body: "Want peace of mind for yourself, an easier practice, or a less burned-out team? Talk to us — Manastej is in development, and early partners help shape it.",
+  cta: "Book a demo",
+  ctaSecondary: "Join early access",
   closing: "The radiance of the mind.",
 };
 

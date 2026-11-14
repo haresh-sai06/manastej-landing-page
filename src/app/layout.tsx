@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   ),
   title: "Manastej | AI-Powered Mental Wellness & Therapy Platform",
   description:
-    "Manastej is a next-generation mental wellness ecosystem combining AI technology, clinical therapy tools, and workplace wellbeing tracking.",
+    "Manastej makes everyday mental health support easy to reach: 2-minute check-ins, someone to talk to, real therapists, and private team-level burnout insights for employers.",
   openGraph: {
     title: "Manastej | Where Science Meets the Soul",
-    description: "A privacy-first mental health ecosystem for individuals, therapists, and HR teams.",
+    description: "Mental health support people actually use — for you, your therapist and your team.",
     type: "website",
     images: ["/manastej-logo.png"],
   },
