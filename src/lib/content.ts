@@ -19,7 +19,7 @@ export const hero = {
   eyebrow: "Manastej — Where Science Meets the Soul",
   title: "Mental health support people actually use — for you, your therapist and your team.",
   sub: "Feeling stretched thin? Help shouldn't be hard to find or scary to ask for",
-  body: "Manastej gives you 2-minute daily check-ins, someone to talk to, and a way to reach a real therapist — and gives employers a team-level view of burnout without ever showing anyone's personal data.",
+  body: "2-minute daily check-ins, someone to talk to, and real therapists — plus team-level burnout insights for employers that never show anyone's personal data.",
   quote: "Mental health is not a destination, but a process. Manastej gives you the compass.",
   tagline: "When no one else listens, we do.",
   pillars: ["Feel better, daily", "Talk to a therapist", "Someone to listen", "Healthier teams"],
