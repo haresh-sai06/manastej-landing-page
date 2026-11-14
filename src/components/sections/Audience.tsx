@@ -34,7 +34,7 @@ export default function Audience() {
               {i === 1 ? <em className="text-mint">{a.title}</em> : a.title}
             </div>
             <div className="au-copy mx-auto mt-6 flex max-w-2xl flex-col items-center gap-3 px-5 text-center">
-              <h3 className="font-serif text-2xl text-foam">0{i + 1} — {a.title}</h3>
+              <h3 className="font-serif text-2xl text-foam">0{i + 1} · {a.title}</h3>
               <p className="max-w-md text-mist">{a.body}</p>
             </div>
           </div>

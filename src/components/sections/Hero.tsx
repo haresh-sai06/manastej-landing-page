@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRef } from "react";
-import { hero } from "@/lib/content";
+import { hero, contactEmail } from "@/lib/content";
 import { useScene, gsap, MQ } from "@/lib/motion";
 import { Leaf } from "@/components/Leaf";
 
@@ -104,12 +104,19 @@ export default function Hero() {
             </h1>
             <p data-intro className="mt-5 max-w-2xl text-balance text-lg text-foam/90 md:text-2xl">{hero.title}</p>
             <p data-intro className="mt-3 max-w-xl text-pretty text-sm text-mist md:text-base">
-              <strong className="font-semibold text-foam">{hero.sub}.</strong> {hero.body}
+              <strong className="block font-semibold text-foam">{hero.sub}.</strong>
+              {/* Keep hyphenated words (2-minute, team-level) from splitting across lines */}
+              {hero.body.split(" ").map((w, i) => (
+                <span key={i}>
+                  {i > 0 && " "}
+                  {w.includes("-") ? <span className="whitespace-nowrap">{w}</span> : w}
+                </span>
+              ))}
             </p>
           </div>
           <div data-intro className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="#about" className="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition-transform hover:scale-[1.04]">Explore Manastej ↗</a>
-            <a href="#organizations" className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-foam transition-colors hover:bg-white/5">For HR ↗</a>
+            <a href="#about" className="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition-transform hover:scale-[1.04]">{hero.ctaPrimary} ↗</a>
+            <a href={`mailto:${contactEmail}?subject=${encodeURIComponent("Manastej demo request")}`} className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-foam transition-colors hover:bg-white/5">{hero.ctaSecondary} ↗</a>
           </div>
         </div>
 
