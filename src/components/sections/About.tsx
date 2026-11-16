@@ -90,7 +90,6 @@ export default function About() {
               </article>
             ))}
           </div>
-          <p data-rise className="mt-14 max-w-3xl border-l-2 border-teal/40 pl-4 text-sm text-mist/80">{about.disclaimer}</p>
         </div>
       </div>
     </section>

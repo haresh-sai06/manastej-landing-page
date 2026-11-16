@@ -56,7 +56,6 @@ export const about = {
     { k: "For Therapists", title: "Less paperwork, more care", body: "See how your client slept, felt and coped between sessions, and keep notes and follow-ups in one place. AI helps; you make every decision." },
     { k: "For Employers", title: "Fix workloads, not just symptoms", body: "See team-level stress trends and what's causing them, never any one person's data, so you can act before good people burn out." },
   ],
-  disclaimer: "Manastej is in active development. Features described represent the product vision, not a claim that every feature is live or clinically validated.",
 };
 
 export const features = {

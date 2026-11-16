@@ -14,7 +14,7 @@
 **Leaf motif**: the leaves around the brain in the logo become floating parallax particles and list bullets.
 
 ## Content rules
-Copy is adapted from the live manastej.com (captured Oct 2026), translated into English where needed, and lives in `src/lib/content.ts`. The site's own caveats are kept next to each feature ("Not a diagnosis", "requires validation", and so on), along with the "in active development" disclaimer. I invented no clients, testimonials, metrics or claims. See TODOs at the bottom.
+Copy is adapted from the live manastej.com (captured Oct 2026), translated into English where needed, and lives in `src/lib/content.ts`. The site's own caveats are kept next to each feature ("Not a diagnosis", "requires validation", and so on). I invented no clients, testimonials, metrics or claims. See TODOs at the bottom.
 
 ## Sections → inspiration
 | Section | What it does | Borrowed from / remixed |
