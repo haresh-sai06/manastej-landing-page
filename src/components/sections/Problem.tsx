@@ -43,15 +43,15 @@ export default function Problem() {
 
         <div className="relative mx-auto grid h-full max-w-6xl px-5 py-24">
           {/* Beat 1: title + stats */}
-          <div className="col-start-1 row-start-1 flex flex-col justify-center gap-12">
+            <div className="col-start-1 row-start-1 flex min-w-0 flex-col justify-center gap-8 sm:gap-12">
             <div className="pb-intro">
               <p className="eyebrow mb-5 text-teal">{problem.label}</p>
-              <h2 id="problem-title" className="pb-title max-w-4xl font-serif text-5xl leading-[0.95] text-ink md:text-8xl">
+              <h2 id="problem-title" className="pb-title max-w-4xl font-serif text-4xl leading-[0.98] text-ink sm:text-5xl lg:text-8xl">
                 <Words text={problem.title} />
               </h2>
               <p data-rise className="mt-6 max-w-xl text-lg text-sage">{problem.body}</p>
             </div>
-            <dl className="pb-stats grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-teal/10 md:grid-cols-4">
+            <dl className="pb-stats grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-teal/10 lg:grid-cols-4">
               {problem.stats.map((s) => (
                 <div key={s.label} data-rise className="pb-stat bg-white p-5 md:p-7">
                   <dt className="eyebrow text-[10px] text-sage">{s.label}</dt>
@@ -65,7 +65,7 @@ export default function Problem() {
           {/* Beat 2: the three failures */}
           <div className="pb-beat2 col-start-1 row-start-2 mt-16 flex flex-col justify-center">
             <p data-rise className="pb-fail-label eyebrow mb-8 text-center text-teal">{problem.failuresLabel}</p>
-            <div className="grid gap-4 md:grid-cols-3 md:gap-5">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
               {problem.failures.map((f, i) => (
                 <article key={f.who} data-rise className="pb-card glass-light relative overflow-hidden rounded-[28px] p-7 md:min-h-[330px]">
                   <span className="font-serif text-7xl text-teal/15" aria-hidden="true">0{i + 1}</span>

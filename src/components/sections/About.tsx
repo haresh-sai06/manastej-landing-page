@@ -78,7 +78,7 @@ export default function About() {
           <p className="max-w-4xl font-serif text-3xl leading-[1.15] text-foam md:text-6xl">
             <Words text={about.body} />
           </p>
-          <div className="mt-16 grid gap-5 md:mt-24 md:grid-cols-3">
+          <div className="mt-12 grid gap-4 sm:mt-16 sm:grid-cols-2 sm:gap-5 lg:mt-24 lg:grid-cols-3">
             {about.audiences.map((a, i) => (
               <article key={a.k} data-speed={[0.15, -0.1, 0.3][i]} className="glass rounded-[28px] p-7">
                 <div className="mb-10 flex items-center justify-between">

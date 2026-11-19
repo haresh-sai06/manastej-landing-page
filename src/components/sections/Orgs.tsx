@@ -23,16 +23,16 @@ export default function Orgs() {
 
   return (
     <section id="organizations" ref={root} aria-labelledby="orgs-title" className="relative bg-deep text-foam">
-      <div className="mx-auto grid max-w-6xl gap-14 px-5 py-28 md:grid-cols-[1fr_1.05fr] md:py-40">
-        <div className="md:sticky md:top-24 md:self-start">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:gap-14 sm:px-5 sm:py-24 lg:grid-cols-[1fr_1.05fr] lg:py-40">
+        <div className="lg:sticky lg:top-24 lg:self-start">
           <p className="eyebrow mb-5 text-mint">{orgs.label}</p>
-          <h2 id="orgs-title" className="font-serif text-5xl leading-[0.95] md:text-7xl">
+          <h2 id="orgs-title" className="font-serif text-4xl leading-[0.98] sm:text-5xl lg:text-7xl">
             {orgs.title} <em className="block text-mint">{orgs.subtitle}</em>
           </h2>
           <p className="mt-6 max-w-md text-lg text-mist">{orgs.body}</p>
 
           <figure className="og-fig mt-10 rounded-[28px] bg-pine/60 p-5 ring-1 ring-mist/15" aria-label="Illustration: only groups of five or more are shown">
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3">
               {groups.map((n, gi) => (
                 <div key={gi} className={`og-group relative rounded-2xl bg-ink/60 p-3 ${n < 5 ? "small" : "big"}`}>
                   <div className="flex flex-wrap gap-1.5">
@@ -49,9 +49,9 @@ export default function Orgs() {
 
         <div data-parallax-root className="og-cards flex flex-col gap-5 md:pt-40">
           {orgs.items.map((o, i) => (
-            <article key={o.tag} data-speed={i % 2 ? 0.25 : -0.1} className="glass rounded-[28px] p-8 md:p-10">
+            <article key={o.tag} data-speed={i % 2 ? 0.25 : -0.1} className="glass min-w-0 rounded-3xl p-5 sm:rounded-[28px] sm:p-8 lg:p-10">
               <p className="eyebrow text-mint">{o.tag}</p>
-              <h3 className="mt-4 font-serif text-4xl leading-tight">{o.title}</h3>
+              <h3 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">{o.title}</h3>
               <p className="mt-4 text-mist">{o.body}</p>
               {i === 1 && (
                 <ul className="mt-6 flex flex-wrap gap-2" aria-label="Common causes of workplace stress">

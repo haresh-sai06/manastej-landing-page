@@ -18,10 +18,10 @@ export default function Audience() {
     });
   });
   return (
-    <section id="audience" ref={root} aria-labelledby="aud-title" className="relative overflow-hidden bg-ink py-28 text-foam md:py-40">
+    <section id="audience" ref={root} aria-labelledby="aud-title" className="relative overflow-hidden bg-ink py-20 text-foam sm:py-24 lg:py-40">
       <div className="mx-auto max-w-6xl px-5">
         <p data-rise className="eyebrow mb-5 text-mint">{audience.label}</p>
-        <h2 id="aud-title" data-rise className="max-w-3xl font-serif text-5xl leading-[0.95] md:text-7xl">
+        <h2 id="aud-title" data-rise className="max-w-3xl font-serif text-4xl leading-[0.98] sm:text-5xl lg:text-7xl">
           Built for people, <em className="text-mint">wherever they are.</em>
         </h2>
         <p data-rise className="mt-6 max-w-xl text-lg text-mist">{audience.body}</p>
@@ -30,7 +30,7 @@ export default function Audience() {
         {audience.items.map((a, i) => (
           <div key={a.title} className="au-row relative py-8 md:py-12">
             <span className="au-line absolute inset-x-0 top-0 block h-px origin-left bg-mist/15" aria-hidden="true" />
-            <div className="au-word whitespace-nowrap px-5 text-center font-serif text-[22vw] leading-[0.85] tracking-[-0.04em] text-foam/90 md:text-[15vw]" aria-hidden="true">
+            <div className="au-word whitespace-nowrap px-5 text-center font-serif text-[clamp(3.5rem,15vw,8rem)] leading-[0.9] tracking-[-0.04em] text-foam/90 xl:text-[15vw]" aria-hidden="true">
               {i === 1 ? <em className="text-mint">{a.title}</em> : a.title}
             </div>
             <div className="au-copy mx-auto mt-6 flex max-w-2xl flex-col items-center gap-3 px-5 text-center">

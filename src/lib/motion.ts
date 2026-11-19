@@ -8,9 +8,11 @@ if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger);
 const useIso = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 export const MQ = {
-  motion: "(prefers-reduced-motion: no-preference)",
-  desktop: "(prefers-reduced-motion: no-preference) and (min-width: 768px)",
-  mobile: "(prefers-reduced-motion: no-preference) and (max-width: 767px)",
+  // Keep pinned and horizontal scroll scenes for roomy landscape/desktop viewports.
+  // Phones, portrait tablets, and short landscape windows use the readable flow layout.
+  motion: "(prefers-reduced-motion: no-preference) and (min-width: 1100px) and (min-height: 650px)",
+  desktop: "(prefers-reduced-motion: no-preference) and (min-width: 1100px) and (min-height: 650px)",
+  mobile: "(prefers-reduced-motion: no-preference) and ((max-width: 1099px) or (max-height: 649px))",
   reduced: "(prefers-reduced-motion: reduce)",
 };
 

@@ -93,17 +93,17 @@ export default function Hero() {
         </div>
 
         {/* Copy */}
-        <div className="hero-copy relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-end px-5 pb-[9vh] text-center md:pb-[11vh]">
-          <div className="hero-message absolute inset-x-5 bottom-[calc(34%+1rem)] flex flex-col items-center md:contents">
-            <p data-intro className="eyebrow mb-4 hidden items-center gap-2 text-mist md:inline-flex">
+        <div className="hero-copy relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-between px-5 text-center pt-[calc(24svh+min(18vw,7.5rem)+0.75rem)] md:pt-[calc(31svh-3rem+10vmin+1.25rem)] pb-7 md:pb-12">
+          <div className="hero-message relative flex w-full flex-col items-center">
+            <p data-intro className="eyebrow mb-3 hidden items-center gap-2 text-mist md:mb-4 md:inline-flex">
               <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-mint" /> {hero.eyebrow}
             </p>
-            <h1 className="font-serif text-[21vw] leading-[0.85] tracking-[-0.03em] text-foam md:text-[8.5rem]">
+            <h1 className="font-serif text-[clamp(3.75rem,14vw,8.5rem)] leading-[0.9] tracking-[-0.03em] text-foam xl:text-[8.5rem]">
               <span data-intro className="inline-block">Manas</span>
               <span data-intro className="inline-block italic text-mint">tej</span>
             </h1>
-            <p data-intro className="mt-5 max-w-2xl text-balance text-lg text-foam/90 md:text-2xl">{hero.title}</p>
-            <p data-intro className="mt-3 max-w-xl text-pretty text-sm text-mist md:text-base">
+            <p data-intro className="mt-4 max-w-2xl text-balance text-lg text-foam/90 md:mt-5 md:text-2xl">{hero.title}</p>
+            <p data-intro className="mt-8 max-w-xl text-pretty text-sm text-mist md:mt-10 md:text-base">
               <strong className="block font-semibold text-foam">{hero.sub}.</strong>
               {/* Keep hyphenated words (2-minute, team-level) from splitting across lines */}
               {hero.body.split(" ").map((w, i) => (
@@ -114,9 +114,9 @@ export default function Hero() {
               ))}
             </p>
           </div>
-          <div data-intro className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="#about" className="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition-transform hover:scale-[1.04]">{hero.ctaPrimary} ↗</a>
-            <a href={`mailto:${contactEmail}?subject=${encodeURIComponent("Manastej demo request")}`} className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-foam transition-colors hover:bg-white/5">{hero.ctaSecondary} ↗</a>
+          <div data-intro className="mt-auto pt-6 flex flex-col sm:flex-row items-center justify-center gap-3.5 md:gap-4">
+            <a href="#about" className="inline-flex items-center justify-center rounded-full bg-mint px-6 py-3.5 text-sm sm:text-base font-semibold text-ink transition-transform hover:scale-[1.04] shadow-[0_0_24px_rgba(86,212,207,.25)]">{hero.ctaPrimary} ↗</a>
+            <a href={`mailto:${contactEmail}?subject=${encodeURIComponent("Manastej demo request")}`} className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3.5 text-sm sm:text-base font-semibold text-foam transition-colors hover:bg-white/5">{hero.ctaSecondary} ↗</a>
           </div>
         </div>
 

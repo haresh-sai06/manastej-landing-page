@@ -153,11 +153,5 @@ export const team = {
       photo: "/team/ashwath.webp",
       bio: "Building intelligence beyond algorithms, Ashwath Srinivasan specialises in Agentic AI, LLM fine-tuning, and advanced RAG architectures. With hands-on experience at Hexaware Technologies and expertise in LangGraph, Python, and neural networks, he transforms complex AI concepts into reliable, measurable solutions. From improving model accuracy to engineering intelligent automation, he brings research-driven innovation to the forefront.\n\nAt Manastej, he drives the intelligence powering human-centred innovation.",
     },
-    {
-      name: "Yash Bannur",
-      role: "Full-Stack Development Lead",
-      photo: "/team/yash.webp",
-      bio: "Yash Bannur transforms ideas into functional digital experiences through modern full-stack engineering. With expertise in Java, Spring Boot, React, JavaScript, and SQL, he builds responsive applications, robust APIs, and seamless backend systems. Driven by problem-solving and product innovation, he bridges technology and usability to create solutions that make a difference.\n\nAt Manastej, he strengthens the digital foundation, turning complex ideas into seamless user experiences.",
-    },
   ],
 };

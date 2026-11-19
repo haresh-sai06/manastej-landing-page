@@ -38,7 +38,7 @@ export default function Tech() {
           <div className="tc-core relative z-10 mx-auto max-w-xl text-center">
             <div className="tc-core-glow pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vmin] w-[60vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(42,143,133,.35),transparent_65%)] opacity-50" aria-hidden="true" />
             <p className="eyebrow mb-5 text-mint">{tech.label}</p>
-            <h2 id="tech-title" className="font-serif text-5xl leading-[0.95] text-foam md:text-7xl">
+          <h2 id="tech-title" className="font-serif text-4xl leading-[0.98] text-foam sm:text-5xl lg:text-7xl">
               Science-led. <em className="text-radiance">Human-centered.</em>
             </h2>
             <p className="mx-auto mt-6 max-w-md text-mist">{tech.body}</p>

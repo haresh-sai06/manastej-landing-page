@@ -39,11 +39,11 @@ export default function Join() {
 
         <div className="jn-copy relative z-10 mx-auto flex min-h-[100svh] max-w-4xl flex-col items-center justify-center px-5 pb-[26vh] pt-24 text-center">
           <p className="eyebrow mb-5 text-mint">{join.label}</p>
-          <h2 id="join-title" className="font-serif text-5xl leading-[0.95] text-foam md:text-8xl">
+          <h2 id="join-title" className="font-serif text-4xl leading-[0.98] text-foam sm:text-5xl lg:text-8xl">
             Let&apos;s make support <em className="text-radiance">easy to reach.</em>
           </h2>
-          <p className="mt-6 max-w-lg text-lg text-mist">{join.body}</p>
-          <a href={`mailto:${contactEmail}`} className="jn-cta mt-10 inline-flex items-center gap-3 rounded-full bg-foam px-8 py-4 font-semibold text-ink shadow-[0_20px_60px_-15px_rgba(242,196,109,.6)]">
+          <p className="mt-5 max-w-lg text-base text-mist sm:mt-6 sm:text-lg">{join.body}</p>
+          <a href={`mailto:${contactEmail}`} className="jn-cta mt-8 inline-flex max-w-full items-center justify-center gap-3 rounded-full bg-foam px-6 py-4 font-semibold text-ink shadow-[0_20px_60px_-15px_rgba(242,196,109,.6)] sm:mt-10 sm:px-8">
             {join.cta} <span aria-hidden="true">↗</span>
           </a>
           <a href={`mailto:${contactEmail}?subject=${encodeURIComponent("Manastej early access")}`} className="mt-4 text-sm font-semibold text-foam underline-offset-4 hover:underline">

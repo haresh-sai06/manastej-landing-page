@@ -64,7 +64,7 @@ export default function Nav() {
       </nav>
       <div
         id="mobile-menu"
-        className={`mx-3 mt-2 border border-white/10 bg-ink/90 backdrop-blur-xl overflow-hidden rounded-3xl transition-all duration-500 lg:hidden ${open ? "max-h-[480px] opacity-100" : "pointer-events-none max-h-0 opacity-0"}`}
+        className={`mx-3 mt-2 max-h-[min(80svh,560px)] overflow-y-auto overscroll-contain border border-white/10 bg-ink/90 backdrop-blur-xl rounded-3xl transition-all duration-500 lg:hidden ${open ? "opacity-100" : "pointer-events-none max-h-0 opacity-0"}`}
       >
         <ul className="p-3">
           {[...nav, { href: "#contact", label: "Join the Journey ↗" }].map((n) => (

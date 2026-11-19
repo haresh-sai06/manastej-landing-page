@@ -27,7 +27,10 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
+  min-width: 320px;
 }
+
+img, svg { max-width: 100%; }
 
 ::selection { background: var(--color-mint); color: var(--color-ink); }
 
@@ -80,8 +83,10 @@ body {
   50% { transform: scale(1.06); opacity: 1; }
 }
 
-/* Pre-JS state for hero intro, removed by JS. Without JS or with reduced motion, content stays visible. */
-.js-motion [data-intro] { opacity: 0; transform: translate3d(0,40px,0); }
+/* Only hide the hero intro while its desktop motion scene can actually run. */
+@media (min-width: 1100px) and (min-height: 650px) and (prefers-reduced-motion: no-preference) {
+  .js-motion [data-intro] { opacity: 0; transform: translate3d(0,40px,0); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
@@ -100,17 +105,65 @@ body {
   #home .hero-quote { position: relative; opacity: 1; padding: 4rem 1.5rem 6rem; }
 }
 
-/* Horizontal feature track: stacked by default, horizontal when motion is on */
-@media (min-width: 768px) { .hz-track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .hz-intro { grid-column: 1 / -1; } }
+/* Phones and tablets keep the feature story in normal document flow. */
+@media (max-width: 1099px), (max-height: 649px) {
+  .js-motion [data-intro] { opacity: 1; transform: none; }
+
+  #home { height: auto; min-height: 100svh; }
+  #home > .sticky { position: relative; top: auto; height: auto; min-height: 100svh; overflow: hidden; }
+  #home .hero-copy {
+    height: auto;
+    min-height: 100svh;
+    justify-content: space-between;
+    padding-top: calc(24svh + min(18vw, 7.5rem) + 0.75rem);
+    padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  }
+  #home .hero-message { position: relative; inset: auto; margin-top: 0; }
+  #home .hero-quote { display: none; }
+  .pv-card.sticky { position: relative !important; top: auto !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  #home .hero-copy {
+    padding-top: calc(31svh - 3rem + 10vmin + 1.25rem);
+    padding-bottom: 3.25rem;
+  }
+  .hz-track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+  .hz-intro { grid-column: 1 / -1; min-width: 0; }
+  .hz-card { min-width: 0; min-height: 31rem; width: 100%; height: auto; }
+  .hz-card .hz-art { height: 12rem; }
+}
+
+@media (max-width: 767px) {
+  .hz-track { display: flex; flex-direction: column; }
+  .hz-intro, .hz-card { min-width: 0; width: 100%; }
+  .hz-card { min-height: 0; height: auto; }
+  .hz-card .hz-art { height: clamp(10rem, 54vw, 14rem); }
+}
+
 .hz-on .hz-stage { height: 100svh; }
 .hz-on .hz-track { display: flex; flex-direction: row; height: 100%; width: max-content; align-items: center; padding: 0 5vw; gap: 2.5vw; }
 .hz-on .hz-intro { width: min(80vw, 520px); grid-column: auto; }
 .hz-on .hz-card { width: min(84vw, 640px); height: min(76svh, 640px); }
 @media (max-width: 767px) { .hz-on .hz-card { height: 74svh; } .hz-on .hz-card .hz-art { height: 34%; } }
 
+@media (max-width: 1099px), (max-height: 649px) {
+  .hz-on .hz-stage { height: auto; }
+  .hz-on .hz-track { display: flex; flex-direction: column; width: auto; height: auto; align-items: stretch; padding: 5rem 1rem; gap: 1.25rem; }
+  .hz-on .hz-intro, .hz-on .hz-card { width: 100%; height: auto; }
+  .hz-on .hz-card { min-height: 0; }
+  .hz-on .hz-card .hz-art { height: clamp(10rem, 54vw, 14rem); }
+}
+
 /* Technology orbit only when pinned on desktop with motion */
 .tc-on .tc-stage { height: 100svh; }
 .tc-on .tc-stage > div { height: 100%; display: grid; place-items: center; padding-top: 0; padding-bottom: 0; }
 .tc-on .tc-orbit-wrap { display: block; width: 0; height: 0; }
 .tc-on .tc-list { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0; }
+
+@media (max-width: 360px) {
+  .eyebrow { font-size: .64rem; letter-spacing: .2em; }
+  #home .hero-copy { padding-inline: 1rem; }
+  #home .hero-message { margin-inline: 0; }
+}
 

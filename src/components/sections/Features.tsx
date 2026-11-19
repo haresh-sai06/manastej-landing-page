@@ -51,18 +51,18 @@ export default function Features() {
               What you can do with <em className="text-mint">Manastej</em>
             </h2>
             <p className="mt-6 max-w-md text-lg text-mist">{features.body}</p>
-            <p className="eyebrow mt-10 hidden items-center gap-3 text-mist/70 md:flex" aria-hidden="true">Keep scrolling <span className="inline-block h-px w-16 bg-mist/40" /></p>
+            <p className="eyebrow mt-10 hidden items-center gap-3 text-mist/70 lg:flex" aria-hidden="true">Keep scrolling <span className="inline-block h-px w-16 bg-mist/40" /></p>
           </header>
           {features.items.map((f, i) => (
             <article key={f.tag} className="hz-card glass relative flex shrink-0 flex-col overflow-hidden rounded-[32px]">
-              <div className="hz-art relative h-48 overflow-hidden md:h-[42%]">
+              <div className="hz-art relative h-44 overflow-hidden sm:h-48 lg:h-[42%]">
                 <FeatureArt i={i} />
               </div>
               <span className="hz-num pointer-events-none absolute right-6 top-4 font-serif text-[7rem] leading-none text-white/[0.06] md:text-[11rem]" aria-hidden="true">0{i + 1}</span>
-              <div className="hz-text relative mt-auto p-7 md:p-10">
+              <div className="hz-text relative mt-auto min-w-0 p-5 sm:p-7 lg:p-10">
                 <p className="eyebrow text-mint">{f.tag}</p>
-                <h3 className="mt-3 font-serif text-3xl leading-tight text-foam md:text-5xl">{f.title}</h3>
-                <p className="mt-4 max-w-lg text-mist md:text-lg">{f.body}</p>
+                <h3 className="mt-3 font-serif text-3xl leading-tight text-foam sm:text-4xl lg:text-5xl">{f.title}</h3>
+                <p className="mt-4 max-w-lg text-mist sm:text-base lg:text-lg">{f.body}</p>
                 <p className="mt-6 inline-flex items-start gap-2 rounded-2xl bg-white/[0.04] px-3 py-2 text-xs text-mist/80"><span aria-hidden="true">ⓘ</span>{f.note}</p>
               </div>
             </article>
