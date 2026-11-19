@@ -46,13 +46,10 @@ export default function Join() {
           <a href={`mailto:${contactEmail}`} className="jn-cta mt-8 inline-flex max-w-full items-center justify-center gap-3 rounded-full bg-foam px-6 py-4 font-semibold text-ink shadow-[0_20px_60px_-15px_rgba(242,196,109,.6)] sm:mt-10 sm:px-8">
             {join.cta} <span aria-hidden="true">↗</span>
           </a>
-          <a href={`mailto:${contactEmail}?subject=${encodeURIComponent("Manastej early access")}`} className="mt-4 text-sm font-semibold text-foam underline-offset-4 hover:underline">
-            {join.ctaSecondary} →
-          </a>
-          <p className="mt-4 text-sm font-medium text-ink">
-            <a href={`mailto:${contactEmail}`} className="hover:underline">{contactEmail}</a>
+          <p className="mt-5 text-sm font-medium text-mist">
+            <a href={`mailto:${contactEmail}`} className="hover:underline hover:text-foam">{contactEmail}</a>
             <span className="mx-2 opacity-40" aria-hidden="true">·</span>
-            <a href={contactPhoneHref} className="hover:underline">{contactPhone}</a>
+            <a href={contactPhoneHref} className="hover:underline hover:text-foam">{contactPhone}</a>
           </p>
         </div>
       </div>

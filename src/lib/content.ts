@@ -127,7 +127,6 @@ export const join = {
   title: "Let's make support easy to reach.",
   body: "Want peace of mind for yourself, an easier practice, or a less burned-out team? Talk to us. Manastej is in development, and early partners help shape it.",
   cta: "Book a demo",
-  ctaSecondary: "Join early access",
   closing: "The radiance of the mind.",
 };
 
